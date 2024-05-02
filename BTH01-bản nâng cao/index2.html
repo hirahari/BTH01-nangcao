@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyện chúng mình</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+    <div class="page" id="introPage">        
+        <div class="page-trai">
+        <ul>
+            <h2>Xin chào cậu nhé!</h2>
+            <h3>Thông tin của tớ:</h2>
+            <li><b>Tên:</b> Trần Thị Mùi</li>
+            <li><b>Giới tính:</b> Nữ</li>
+            <li><b>Sở thích:</b> Đọc sách, Nghe nhạc, xem phim,...</li>
+                
+        </ul>
+        <ul>
+            <li>Link: <a href="https://www.facebook/">Facebook tui nha</a></li>
+            <li>Địa chỉ: Thành phố Hồ Chí Minh</li>
+            <li>Email: tmuiii287@gmail.com</li>
+            <li>Số điện thoại: 0333666999</li>
+        </ul>
+        <h4>Cậu có câu chuyện muốn tâm sự hãy liên lạc với tớ nha!</h4>
+        </div>
+
+        <div class="page-phai">
+            <div class="story-phai-img"><img src="https://th.bing.com/th/id/OIP.5sgEuXgIbZh1pn4rp_hRZwHaFj?rs=1&pid=ImgDetMain" alt=""></div>
+        </div>
+    </div>
+
+    <div class="page" id="storyPage" style="display: none;">
+        <h1>Story</h1>
+        <form id="contactForm">
+            <label for="name">Tên bạn:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email bạn:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Tiêu đề:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Câu chuyện của bạn:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Gửi</button>
+        </form>
+    </div>
+
+    <div class="arrow-container">
+        <button id="nextPageButton" class="next-page-button">&#8594;</button>
+    </div>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const nextPageButton = document.getElementById('nextPageButton');
+            const introPage = document.getElementById('introPage');
+            const storyPage = document.getElementById('storyPage');
+
+            nextPageButton.addEventListener('click', function() {
+                introPage.style.display = 'none';
+                storyPage.style.display = 'block';
+                storyPage.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f195b2;
+    color: #333;
+}
+
+.page {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.page .page-trai {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.page .page-phai {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page .story-phai-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page .page-phai .story-phai-img {
+    order: -1; /* Đặt hình ảnh lên trên khi sử dụng flexbox */
+}
+
+
+.page h1, .page h2, .page h3 {
+    color: #007bff;
+}
+
+.page ul {
+    list-style: none;
+    padding: 0;
+}
+
+.page ul li {
+    margin-bottom: 10px;
+}
+
+
+.page ul li ul {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.arrow-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.next-page-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.next-page-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+footer h3 {
+    color: #007bff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#storyPage form {
+    padding: 20px;
+}
+
+#storyPage label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#storyPage input[type="text"],
+#storyPage input[type="email"],
+#storyPage textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#storyPage textarea {
+    resize: vertical;
+}
+
+#storyPage .btn {
+    margin-top: 10px;
+}
